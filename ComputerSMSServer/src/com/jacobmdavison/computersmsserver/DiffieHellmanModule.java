@@ -38,13 +38,8 @@ public class DiffieHellmanModule {
     public DiffieHellmanModule() {
         // Init the KeyPairGenerator
         try {
-        	//int bitLength = 1024;
-            //SecureRandom rnd = new SecureRandom();
-            //BigInteger p = BigInteger.probablePrime(bitLength, rnd);
-            //BigInteger g = BigInteger.probablePrime(bitLength, rnd);
             DHParameterSpec dhParameterSpec = new DHParameterSpec(skip1024Modulus, skip1024Base);
             keyPairGenerator = KeyPairGenerator.getInstance("DH");
-            //keyPairGenerator.initialize(1024);
             keyPairGenerator.initialize(dhParameterSpec);
         } catch (NoSuchAlgorithmException e) {
             e.printStackTrace();
@@ -52,7 +47,6 @@ public class DiffieHellmanModule {
         
         
         catch (InvalidAlgorithmParameterException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 
