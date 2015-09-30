@@ -4,13 +4,13 @@ Using this Java application in conjunction with the [ComputerSMS Android applica
 
 ## Usage
 
-1. Select *Start* and wait for the message *Ready to connect* to be displayed. This will take several seconds.
-2. Select the *Enable* button from the Android companion application.
-3. The message *Service started* should now be displayed on both this application and the Android companion application.
+1. Select *"Start"* and wait for the message *"Ready to connect"* to be displayed. This will take several seconds.
+2. Select the *"Enable"* button from the Android companion application.
+3. The message *"Service started"* should now be displayed on both this application and the Android companion application.
 4. To send a message:
-  * Enter the 10 digit recipient's number in the *Phone Number:* text box.
-  * Enter the message in the *Message:* text box.
-  * Select the *Send* button.
+  * Enter the 10 digit recipient's number in the *"Phone Number:"* text box.
+  * Enter the message in the *"Message:"* text box.
+  * Select the *"Send"* button.
 5. Incoming text messages will be displayed with the sender's phone number in blue.
 6. Incoming phone calls will be displayed in red.
 
