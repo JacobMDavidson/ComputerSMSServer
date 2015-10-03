@@ -202,6 +202,7 @@ public class ServerBoard extends JFrame {
 				new BoxLayout(getContentPane(), BoxLayout.Y_AXIS));
 
 		setSize(400, 300);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setVisible(true);
 	}
 
