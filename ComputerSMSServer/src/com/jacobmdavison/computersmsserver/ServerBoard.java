@@ -114,7 +114,6 @@ public class ServerBoard extends JFrame {
 
 				// creates the object OnMessageReceived asked by the TCPServer
 				// constructor
-
 				mServer = new TCPServer(ServerBoard.this,
 						new TCPServer.OnMessageReceived() {
 							@Override
