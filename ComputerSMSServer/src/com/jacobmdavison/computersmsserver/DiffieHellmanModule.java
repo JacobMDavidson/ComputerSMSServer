@@ -23,7 +23,7 @@ import javax.crypto.spec.DHParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
 
 /**
- * Uses Diffie Hellman to generate shared AES key, then encrypts/decrypts
+ * Uses Diffie-Hellman to generate shared AES key, then encrypts/decrypts
  * strings Created by jacobdavidson on 8/27/15.
  */
 public class DiffieHellmanModule {
@@ -93,14 +93,12 @@ public class DiffieHellmanModule {
 
 	public String encryptString(String plainText) {
 
-		// @ TODO should I really init Cipher each time??
 		try {
 			// Instantiate the cipher
 			Cipher cipher = Cipher.getInstance("AES/ECB/PKCS5Padding");
 			cipher.init(Cipher.ENCRYPT_MODE, secretKey);
 			byte[] cipherText = cipher.doFinal(plainText.getBytes());
 
-			// @ TODO fix
 			return new String(Base64.getEncoder().encode(cipherText));
 
 		} catch (NoSuchAlgorithmException e) {
@@ -123,7 +121,6 @@ public class DiffieHellmanModule {
 	}
 
 	public String decryptString(String cipherText) {
-		// @ TODO should I really init Cipher each time??
 		try {
 			// Instantiate the cipher
 			Cipher cipher = Cipher.getInstance("AES/ECB/PKCS5Padding");

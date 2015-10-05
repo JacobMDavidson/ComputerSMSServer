@@ -117,9 +117,6 @@ public class TCPServer extends Thread {
 					clientMessage = in.readLine();
 					// System.out.print(clientMessage);
 					if (clientMessage != null) {
-						// @ TODO look for specific xml message with key built
-						// in and extract it
-
 						// attempt to calculate the AES key usig the DH key
 						// exchange
 						byte[] data = Base64.getDecoder().decode(clientMessage);
